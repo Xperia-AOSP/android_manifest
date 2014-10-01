@@ -9,19 +9,6 @@
            fetch="https://github.com"
            review="gerrit.aospal.com" />
 
-  <remote  name="legacy-blobs"
-           fetch="https://github.com/ThankYouLuigi" />
-
-  <remote  name="blobs"
-           fetch="https://github.com/TheMuppets" />
-
-  <remote  name="paranoid"
-           fetch="ssh://git@bitbucket.org/paranoidandroid/" />
-
-  <remote  name="cm"
-           fetch="git://github.com"
-           review="review.cyanogenmod.org" />
-
   <default revision="refs/tags/android-4.4.4_r2"
            remote="aosp"
            sync-c="true"
@@ -43,8 +30,7 @@
   <project name="CyanogenMod/android_kernel_sony_msm8974pro" path="kernel/sony/msm8974pro" remote="github" revision="cm-11.0" />
   <project name="CyanogenMod/android_hardware_sony_DASH" path="hardware/sony/DASH" remote="github" revision="cm-11.0" />
 
-
-
+  <!-- AOSP overrides -->
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="AOSPA-legacy/android_art" remote="github" revision="kitkat" />
   <project path="bionic" name="CyanogenMod/android_bionic" remote="cm" revision="cm-11.0" />
